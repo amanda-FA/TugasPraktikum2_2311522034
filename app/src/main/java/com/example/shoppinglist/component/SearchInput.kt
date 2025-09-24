@@ -1,3 +1,5 @@
+package com.example.shoppinglist.component
+
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -10,8 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun SearchInput(query: String, onQueryChange: (String) -> Unit)
-{
+fun SearchInput(query: String, onQueryChange: (String) -> Unit) {
     OutlinedTextField(
         value = query,
         onValueChange = onQueryChange,
@@ -19,8 +20,8 @@ fun SearchInput(query: String, onQueryChange: (String) -> Unit)
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(16.dp),
         leadingIcon = {
-            Icon(imageVector = Icons.Default.Search,
-                contentDescription = "Search Icon")
-    }
-)
+            Icon(imageVector = Icons.Default.Search, contentDescription
+            = "Search Icon")
+        }
+    )
 }

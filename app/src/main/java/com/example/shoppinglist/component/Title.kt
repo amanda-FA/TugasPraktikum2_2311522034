@@ -1,4 +1,5 @@
-import android.icu.text.CaseMap
+package com.example.shoppinglist.component
+
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
@@ -14,7 +15,7 @@ import androidx.compose.ui.unit.sp
 fun Title() {
     Text(
         text = "Shopping List",
-        style = MaterialTheme.typography.headlineLarge.copy(
+        style = MaterialTheme .typography.headlineLarge.copy(
             fontWeight = FontWeight.Bold,
             fontSize = 32.sp,
             color = MaterialTheme.colorScheme.primary
