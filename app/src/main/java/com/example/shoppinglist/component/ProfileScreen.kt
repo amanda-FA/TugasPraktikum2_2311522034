@@ -86,12 +86,14 @@ fun ProfileItem(label: String, value: String) {
             text = label,
             style = MaterialTheme.typography.bodyLarge,
             fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 8.dp)
         )
         Text(
             text = value,
             style = MaterialTheme.typography.bodyLarge,
-            fontWeight = FontWeight.Normal
+            fontWeight = FontWeight.Normal,
+                    modifier = Modifier.weight(1f)
         )
     }
 }
